@@ -15,7 +15,7 @@ def read_csv(filename, variable_names=[], validate=True):
         variable_names   list of variables to read (default: read all)
 
     Returns:
-        traj             the trajectoies read from the CSV file
+        traj             the trajectories read from the CSV file
     """
 
     # pass an empty string as deletechars to preserve special characters
@@ -144,7 +144,7 @@ def validate_signal(t, y, t_ref, y_ref, num=1000, dx=20, dy=0.1):
 
 
 def validate_result(result, reference, stop_time=None):
-    """ Validate a simulation result agains a reference result
+    """ Validate a simulation result against a reference result
 
     Parameters:
         result      structured NumPy array where the first column is the time
@@ -493,7 +493,7 @@ def compile_dll(model_description, sources_dir, compiler=None):
     """ Compile the shared library
 
     Parameters:
-        sources_dir:    directory that conatains the FMU's source code
+        sources_dir:    directory that contains the FMU's source code
         compiler:       compiler to use (None: use Visual C on Windows, GCC otherwise)
     """
 
